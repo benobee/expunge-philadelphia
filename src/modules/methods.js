@@ -27,7 +27,7 @@ Raven.methods({
 	        });
 	    };
 
-        $('#collection-5910b1cdebbd1ad89d210bbb .sqs-block-image, #collection-5910b70e8419c210341c296b .sqs-block-image').on("click", (e) => {
+        $('#collection-5910b1cdebbd1ad89d210bbb .sqs-block-image, #collection-5910b70e8419c210341c296b .sqs-block-image, #collection-591df41cd1758ef7f046284c .sqs-block-image').on("click", (e) => {
         	//inject content from image into modal
             const content = $(e.currentTarget).find('.image-card-wrapper').clone();
 

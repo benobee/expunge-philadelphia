@@ -1,3 +1,4 @@
+/* congrats pages */
 #collection-538cdf36e4b0d8c24bec8f7f, #collection-538ce4eee4b08a828a9c65c9 {
     h1 {
         background: #63b243;
@@ -7,6 +8,8 @@
         box-shadow: 1px 4px 8px #b5b5b5;
     }
 }
+
+/* contain modal on do I have a juve record page */
 #collection-5910b1cdebbd1ad89d210bbb {
     .modal-content {
         max-width: 600px;
@@ -21,11 +24,20 @@
         padding: 1em 0em;
     }
 }
+
 .card-layout {
     .sqs-row {
         display: flex;
         flex-wrap: wrap;
-        .sqs-col-4 {
+        .sqs-col-6 {
+            width: 50% !important;
+            padding: 0;
+            margin: 0;
+            @media screen and (max-width:768px) {
+                width: 100% !important;
+            }            
+        }
+        .sqs-col-4{
             width: 33.33% !important;
             padding: 0;
             margin: 0;
@@ -65,7 +77,9 @@
         .image-title-wrapper {
             background: @accent;
             padding: 0.5em 0.5em;
-            min-height: 40px;
+            @media screen and (min-width:769px) {
+                min-height: 50px;
+            }
             border-bottom: black solid 4px;
             p {
                 color: white;
@@ -76,12 +90,11 @@
         }
     }
 }
-#collection-5910b70e8419c210341c296b {
+
+#collection-5910b6f329687ff6d04cf12f, #collection-5910b70e8419c210341c296b, #collection-591df41cd1758ef7f046284c {
     .card-layout;
 }
-#collection-5910b6f329687ff6d04cf12f {
-    .card-layout;
-}
+
 #collection-5910b1cdebbd1ad89d210bbb {
     .card-layout;
     .sqs-row {
